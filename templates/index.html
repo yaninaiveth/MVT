@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familia Adams</title>
+</head>
+<body>
+        <h1>Los Locos Adams</h1>
+
+        {% for f in familiar %}
+            <ul>                    
+                <li>Nombre: {{f.nombre}}</td>
+                <li>Nacimiento: {{f.cumple}}</td>
+                <li>Parentezco: {{f.parentezco}}</td>
+            </ul>
+            <br>
+        {% endfor %}
+</body>
+</html>
